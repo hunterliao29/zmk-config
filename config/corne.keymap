@@ -13,6 +13,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+                        label = "ColemakDH";
                         bindings = <
 //    ┌───┬────┬────┬────┬───────┬──────┐                   ┌──────┬───────┬────┬────┬────┬───┐
 //    │   │  Q │  W │  F │   P   │   B  │                   │   J  │   L   │  U │  Y │  ; │   │
