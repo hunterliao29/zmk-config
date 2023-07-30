@@ -9,25 +9,43 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+  behaviors {
+    u_mt: u_mt {
+      compatible = "zmk,behavior-hold-tap";
+      label = "u_mt";
+      #binding-cells = <2>;
+      tapping_term_ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
+    u_lt: u_lt {
+      compatible = "zmk,behavior-hold-tap";
+      label = "u_lt";
+      #binding-cells = <2>;
+      tapping_term_ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&mo>, <&kp>;
+    };
+  };
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "ColemakDH";
+                        label = "Colemak";
                         bindings = <
-//    ┌───┬────┬────┬────┬───────┬──────┐                   ┌──────┬───────┬────┬────┬────┬───┐
-//    │   │  Q │  W │  F │   P   │   B  │                   │   J  │   L   │  U │  Y │  ; │   │
-//    ├───┼────┼────┼────┼───────┼──────┤                   ├──────┼───────┼────┼────┼────┼───┤
-//    │   │  A │  R │  S │   T   │   G  │                   │   M  │   N   │  E │  I │  O │   │
-//    ├───┼────┼────┼────┼───────┼──────┤                   ├──────┼───────┼────┼────┼────┼───┤
-//    │   │  Z │  X │  C │   D   │   V  │                   │   K  │   H   │  , │  . │  / │   │
-//    └───┴────┴────┴────┼───────┼──────┼────────┐   ┌──────┼──────┼───────┼────┴────┴────┴───┘
-//                       │  LGUI │ mo 1 │  SPACE │   │  RET │ mo 2 │  RALT │                   
-//                       └───────┴──────┴────────┘   └──────┴──────┴───────┘                   
-  &none   &kp Q   &kp W   &kp F   &kp P      &kp B                             &kp J   &kp L      &kp U       &kp Y     &kp SEMI   &none
-  &none   &kp A   &kp R   &kp S   &kp T      &kp G                             &kp M   &kp N      &kp E       &kp I     &kp O      &none
-  &none   &kp Z   &kp X   &kp C   &kp D      &kp V                             &kp K   &kp H      &kp COMMA   &kp DOT   &kp FSLH   &none
-                                  &kp LGUI   &mo 1   &kp SPACE       &kp RET   &mo 2   &kp RALT                                         
+//    ┌───┬──────────────┬─────────────┬─────────────┬──────────────┬──────┐                   ┌──────┬───────┬────┬────┬────┬───┐
+//    │   │       Q      │      W      │      F      │       P      │   B  │                   │   J  │   L   │  U │  Y │  ; │   │
+//    ├───┼──────────────┼─────────────┼─────────────┼──────────────┼──────┤                   ├──────┼───────┼────┼────┼────┼───┤
+//    │   │ u_mt A LCTRL │ u_mt R LALT │ u_mt S LGUI │ u_mt T LSHFT │   G  │                   │   M  │   N   │  E │  I │  O │   │
+//    ├───┼──────────────┼─────────────┼─────────────┼──────────────┼──────┤                   ├──────┼───────┼────┼────┼────┼───┤
+//    │   │       Z      │      X      │      C      │       D      │   V  │                   │   K  │   H   │  , │  . │  / │   │
+//    └───┴──────────────┴─────────────┴─────────────┼──────────────┼──────┼────────┐   ┌──────┼──────┼───────┼────┴────┴────┴───┘
+//                                                   │     LGUI     │ mo 1 │  SPACE │   │  RET │ mo 2 │  RALT │                   
+//                                                   └──────────────┴──────┴────────┘   └──────┴──────┴───────┘                   
+  &none   &kp Q           &kp W          &kp F          &kp P           &kp B                             &kp J   &kp L      &kp U       &kp Y     &kp SEMI   &none
+  &none   &u_mt A LCTRL   &u_mt R LALT   &u_mt S LGUI   &u_mt T LSHFT   &kp G                             &kp M   &kp N      &kp E       &kp I     &kp O      &none
+  &none   &kp Z           &kp X          &kp C          &kp D           &kp V                             &kp K   &kp H      &kp COMMA   &kp DOT   &kp FSLH   &none
+                                                        &kp LGUI        &mo 1   &kp SPACE       &kp RET   &mo 2   &kp RALT                                         
                         >;
                 };
                 lower_layer {
