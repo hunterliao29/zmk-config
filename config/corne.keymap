@@ -8,8 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/ {
-  behaviors {
+behaviors {
     u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";
       label = "u_mt";
@@ -27,12 +26,13 @@
       bindings = <&mo>, <&kp>;
     };
   };
-        keymap {
-                compatible = "zmk,keymap";
 
-                default_layer {
-                        label = "Colemak";
-                        bindings = <
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+    default_layer {
+      label = "Colemak";
+      bindings = <
 //    ┌───┬──────────────┬─────────────┬─────────────┬──────────────┬────────┐                 ┌───────┬──────────────┬─────────────┬─────────────┬──────────────┬───┐
 //    │   │       Q      │      W      │      F      │       P      │    B   │                 │   J   │       L      │      U      │      Y      │       ;      │   │
 //    ├───┼──────────────┼─────────────┼─────────────┼──────────────┼────────┤                 ├───────┼──────────────┼─────────────┼─────────────┼──────────────┼───┤
@@ -46,10 +46,10 @@
   &none   &u_mt LCTRL A   &u_mt LALT R   &u_mt LGUI S   &u_mt LSHFT T   &kp G                               &kp M      &u_mt LSHFT N   &u_mt LGUI E   &u_mt LALT I   &u_mt LCTRL O   &none
   &none   &kp Z           &kp X          &kp C          &kp D           &kp V                               &kp K      &kp H           &kp COMMA      &kp DOT        &kp FSLH        &none
                                                         &kp ESC         &kp SPACE   &kp TAB       &kp RET   &kp BSPC   &kp DEL                                                            
-                        >;
-                };
-                lower_layer {
-                        bindings = <
+      >;
+    };
+    lower_layer {
+      bindings = <
 //    ┌───┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┐                   ┌───────┬───────┬───────┬────────┬───────┬───┐
 //    │   │      1      │      2      │      3      │      4      │      5      │                   │   6   │   7   │   8   │    9   │   0   │   │
 //    ├───┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                   ├───────┼───────┼───────┼────────┼───────┼───┤
@@ -63,11 +63,10 @@
   &none   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                             &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &trans   &none
   &none   &trans         &trans         &trans         &trans         &trans                                   &trans     &trans     &trans   &trans      &trans   &none
                                                        &kp LGUI       &trans         &kp SPACE       &kp RET   &trans     &kp RALT                                      
-                        >;
-                };
-
-                raise_layer {
-                        bindings = <
+      >;
+    };
+    raise_layer {
+      bindings = <
 //    ┌───┬───────┬───────┬───────┬───────┬────────┐                   ┌────────┬────────┬──────────────┬───────┬───────┬───┐
 //    │   │  EXCL │   AT  │  HASH │  DLLR │  PRCNT │                   │  CARET │  AMPS  │  KP_MULTIPLY │  LPAR │  RPAR │   │
 //    ├───┼───────┼───────┼───────┼───────┼────────┤                   ├────────┼────────┼──────────────┼───────┼───────┼───┤
@@ -77,11 +76,11 @@
 //    └───┴───────┴───────┴───────┼───────┼────────┼────────┐   ┌──────┼────────┼────────┼──────────────┴───────┴───────┴───┘
 //                                │  LGUI │ trans  │  SPACE │   │  RET │ trans  │  RALT  │                                   
 //                                └───────┴────────┴────────┘   └──────┴────────┴────────┘                                   
-  &none   &kp EXCL   &kp AT   &kp HASH   &kp DLLR   &kp PRCNT                             &kp CARET   &kp AMPS    &kp KP_MULTIPLY   &kp LPAR   &kp RPAR   &none
-  &none   &trans     &trans   &trans     &trans     &trans                                &kp MINUS   &kp EQUAL   &kp LBKT          &kp RBKT   &kp BSLH   &none
-  &none   &trans     &trans   &trans     &trans     &trans                                &kp UNDER   &kp PLUS    &kp LBRC          &kp RBRC   &kp PIPE   &none
-                                         &kp LGUI   &trans      &kp SPACE       &kp RET   &trans      &kp RALT                                                 
-                        >;
-                };
-        };
+&none   &kp EXCL   &kp AT   &kp HASH   &kp DLLR   &kp PRCNT                             &kp CARET   &kp AMPS    &kp KP_MULTIPLY   &kp LPAR   &kp RPAR   &none
+&none   &trans     &trans   &trans     &trans     &trans                                &kp MINUS   &kp EQUAL   &kp LBKT          &kp RBKT   &kp BSLH   &none
+&none   &trans     &trans   &trans     &trans     &trans                                &kp UNDER   &kp PLUS    &kp LBRC          &kp RBRC   &kp PIPE   &none
+                                        &kp LGUI   &trans      &kp SPACE       &kp RET   &trans      &kp RALT                                                 
+      >;
+    };
+  };
 };
