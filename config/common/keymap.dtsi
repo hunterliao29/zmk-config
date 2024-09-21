@@ -45,10 +45,6 @@
 #define U_BTN2 &mkp MB2
 #define U_BTN3 &mkp MB3
 
-#if !defined (U_EP_TOG)
-  #define U_EP_TOG &u_ep_tog
-#endif
-
 / {
   behaviors {
     shift_mod_morph(sqt_under, &kp SQT, &kp UNDERSCORE)
@@ -63,7 +59,11 @@
     shift_mod_morph(u_rgb_sai, &rgb_ug RGB_SAI, &rgb_ug RGB_SAD)
     shift_mod_morph(u_rgb_bri, &rgb_ug RGB_BRI, &rgb_ug RGB_BRD)
 
-    shift_mod_morph(u_ep_tog, &ext_power EP_TOG, &ext_power EP_OFF)
+    #if !defined (U_EP_TOG)
+      shift_mod_morph(u_ep_tog, &ext_power EP_TOG, &ext_power EP_OFF)
+      #define U_EP_TOG &u_ep_tog
+    #endif
+
 
     shift_mod_morph(u_out_tog, &out OUT_TOG, &out OUT_USB)
     shift_mod_morph(u_bt_sel_0, &bt BT_SEL 0, &bt BT_SEL 0 &bt BT_CLR)
