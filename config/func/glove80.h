@@ -1,3 +1,4 @@
+#define MOERGO
 #define XXX &none
 #define MAG &mo U_MAGIC
 
