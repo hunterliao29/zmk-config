@@ -83,7 +83,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
-      quick-tap-ms = <0>;
+      quick-tap-ms = <150>;
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
@@ -92,6 +92,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
+      quick-tap-ms = <150>;
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
