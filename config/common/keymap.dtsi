@@ -45,6 +45,9 @@
 #define U_BTN2 &mkp MB2
 #define U_BTN3 &mkp MB3
 
+#if !defined (U_EP_TOG)
+  #define U_EP_TOG &u_ep_tog
+#endif
 
 / {
   behaviors {
@@ -192,7 +195,7 @@
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &u_bootloader,&u_to_tap,    &u_to_extra,  &u_to_base,   &none,            &u_rgb_tog,   &u_rgb_eff,   &kp C_VOL_UP, &u_rgb_hui,   &u_rgb_sai, \
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-           &kp LCTRL,    &kp LALT,     &kp LGUI,     &kp LSHIFT,   &none,            &u_ep_tog,    &kp C_PREV,   &kp C_VOL_DN, &kp C_NEXT,   &u_rgb_bri, \
+           &kp LCTRL,    &kp LALT,     &kp LGUI,     &kp LSHIFT,   &none,            U_EP_TOG,    &kp C_PREV,   &kp C_VOL_DN, &kp C_NEXT,   &u_rgb_bri, \
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
            &none,        &kp RALT,     &u_to_sym,    &u_to_mouse,  &none,            &u_out_tog,   &u_bt_sel_0,  &u_bt_sel_1,  &u_bt_sel_2,  &u_bt_sel_3,\
       // ╰─────────┬───┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴───┬─────────╯
