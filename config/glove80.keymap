@@ -1,4 +1,4 @@
-
+#include "common/default.h"
 #include "func/glove80.h"
 #include "common/keymap.dtsi"
 

@@ -1,2 +1,3 @@
+#include "common/default.h"
 #include "func/corne.h"
 #include "common/keymap.dtsi"
