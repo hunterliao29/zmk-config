@@ -1,4 +1,4 @@
-name: "Build Corne"
+name: "Build Reset"
 
 on: [workflow_dispatch]
 
