@@ -101,6 +101,7 @@
     compatible = "zmk,keymap";
 
     Base {
+      display-name = "Base";
       bindings = <MAP_LAYER_BASE( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &kp B,        &kp L,        &kp D,        &kp W,        &kp Z,            &sqt_under,   &kp F,        &kp O,        &kp U,        &kp J,      \
@@ -115,6 +116,7 @@
     };
 
     Extra {
+      display-name = "Qwerty";
       bindings = <MAP_LAYER_EXTRA( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &kp Q,        &kp W,        &kp E,        &kp R,        &kp T,            &kp Y,        &kp U,        &kp I,        &kp O,        &kp P,      \
@@ -128,6 +130,7 @@
       )>;
     };
     Tap {
+      display-name = "Colemak";
       bindings = <MAP_LAYER_TAP( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &kp Q,        &kp W,        &kp F,        &kp P,        &kp B,            &kp J,        &kp L,        &kp U,        &kp Y,        &kp SEMI,   \
@@ -141,6 +144,7 @@
       )>;
     };
     Button {
+      display-name = "Button";
       bindings = <MAP_LAYER_BUTTON( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            U_UND,        U_CUT,        U_CPY,        U_PST,        U_RDO,            U_RDO,        U_PST,        U_CPY,        U_CUT,        U_UND,      \
@@ -154,6 +158,7 @@
       )>;
     };
     Nav {
+      display-name = "Nav";
       bindings = <MAP_LAYER_NAV( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &u_bootloader,&u_to_tap,    &u_to_extra,  &u_to_base,   &none,            &kp INS,      &kp HOME,     &kp UP,       &kp END,      &kp PG_UP,  \
@@ -167,6 +172,7 @@
       )>;
     };
     Mouse {
+      display-name = "Mouse";
       bindings = <MAP_LAYER_MOUSE( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &u_bootloader,&u_to_tap,    &u_to_extra,  &u_to_base,   &none,            &kp INS,      &kp HOME,     &kp UP,       &kp END,      &kp PG_UP,  \
@@ -180,6 +186,7 @@
       )>;
     };
     Media {
+      display-name = "Media";
       bindings = <MAP_LAYER_MEDIA( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &u_bootloader,&u_to_tap,    &u_to_extra,  &u_to_base,   &none,            &u_rgb_tog,   &u_rgb_eff,   &kp C_VOL_UP, &u_rgb_hui,   &u_rgb_sai, \
@@ -193,6 +200,7 @@
       )>;
     };
     Num {
+      display-name = "Num";
       bindings = <MAP_LAYER_NUM( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &kp LBKT,     &kp N7,       &kp N8,       &kp N9,       &kp RBKT,         &none,        &u_to_base,   &u_to_extra,  &u_to_tap,  &u_bootloader,\
@@ -206,6 +214,7 @@
       )>;
     };
     Sym {
+      display-name = "Sym";
       bindings = <MAP_LAYER_SYM( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &kp LBRC,     &kp AMPS,     &kp ASTRK,    &kp LPAR,     &kp RBRC,         &none,        &u_to_base,   &u_to_extra,  &u_to_tap,  &u_bootloader,\
@@ -219,6 +228,7 @@
       )>;
     };
     Fun {
+      display-name = "Fun";
       bindings = <MAP_LAYER_FUN( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
            &kp F12,      &kp F7,       &kp F8,       &kp F9,       &kp PSCRN,        &none,        &u_to_base,   &u_to_extra,  &u_to_tap,  &u_bootloader,\
