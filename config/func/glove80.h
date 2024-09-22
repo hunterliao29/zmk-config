@@ -7,12 +7,12 @@
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, \
               k30, k31, k32, k33, k34, k35            \
 ) \
-&kp F1        &kp F2    &kp F3    &kp F4    &kp F5                                                &kp F6    &kp F7    &kp F8    &kp F9    &kp F10     \
-&kp EQUAL     &kp N1    &kp N2    &kp N3    &kp N4  &kp N5                                &kp N6  &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS   \
-&kp GRAVE     k00       k01       k02       k03     k04                                   k05     k06       k07       k08       k09       &kp SLASH   \
-&u_caps_words k10       k11       k12       k13     k14                                   k15     k16       k17       k18       k19       &kp BSLH    \
-&sk LSHIFT    k20       k21       k22       k23     k24     XXX XXX XXX   XXX XXX XXX     k25     k26       k27       k28       k29       &sk RSHIFT  \
-MAG           &kp HOME  &kp PG_UP &kp PG_DN &kp END         k30 k31 k32   k33 k34 k35             &kp LPAR  &kp LBKT  &kp RBKT  &kp RPAR  MAG
+&kp F1        &kp F2    &kp F3    &kp F4    &kp F5                                                                                  &kp F6    &kp F7    &kp F8    &kp F9    &kp F10     \
+&kp EQUAL     &kp N1    &kp N2    &kp N3    &kp N4  &kp N5                                                                  &kp N6  &kp N7    &kp N8    &kp N9    &kp N0    &kp MINUS   \
+&kp GRAVE     k00       k01       k02       k03     k04                                                                     k05     k06       k07       k08       k09       &kp SLASH   \
+&u_caps_words k10       k11       k12       k13     k14                                                                     k15     k16       k17       k18       k19       &kp BSLH    \
+&sk LSHIFT    k20       k21       k22       k23     k24     &sk LSHIFT  &kp UP  &kp DOWN    &kp LEFT  &kp RIGHT &sk RSHIFT  k25     k26       k27       k28       k29       &sk RSHIFT  \
+MAG           &kp HOME  &kp PG_UP &kp PG_DN &kp END         k30         k31     k32         k33       k34       k35                 &kp LPAR  &kp LBKT  &kp RBKT  &kp RPAR  MAG
 
 
 #define MAP_LAYER_MAGIC( \
