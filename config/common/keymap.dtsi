@@ -47,9 +47,11 @@
     shift_mod_morph(u_rgb_sai, &rgb_ug RGB_SAI, &rgb_ug RGB_SAD)
     shift_mod_morph(u_rgb_bri, &rgb_ug RGB_BRI, &rgb_ug RGB_BRD)
 
-    #if !defined (U_EP_TOG)
+    #if !defined (MOERGO)
       shift_mod_morph(u_ep_tog, &ext_power EP_TOG, &ext_power EP_OFF)
       #define U_EP_TOG &u_ep_tog
+    #else
+      #define U_EP_TOG &ext_power EP_TOG
     #endif
 
 
