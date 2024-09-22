@@ -94,11 +94,11 @@
       display-name = "Base";
       bindings = <MAP_LAYER_BASE( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-           &kp B,        &kp L,        &kp D,        &kp C,        &kp V,            &kp J,        &kp F,        &kp O,        &kp U,        &kp COMMA,  \
+           &kp B,        &kp L,        &kp D,        &kp C,        &kp V,            &kp J,        &kp Y,        &kp O,        &kp U,        &kp COMMA,  \
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-           &hm LCTRL N,  &hm LALT R,   &hm LGUI T,   &hm LSHIFT S, &kp G,            &kp Y,        &hm LSHIFT H, &hm LGUI A,   &hm LALT E,   &hm LCTRL I,\
+           &hm LCTRL N,  &hm LALT R,   &hm LGUI T,   &hm LSHIFT S, &kp G,            &kp P,        &hm LSHIFT H, &hm LGUI A,   &hm LALT E,   &hm LCTRL I,\
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-           &u_lt U_BUTTON X,&hm RALT Q,&kp M,        &kp W,        &kp Z,            &kp K,        &kp P,       &kp SQT,&hm RALT SEMI,&u_lt U_BUTTON DOT,\
+           &u_lt U_BUTTON X,&hm RALT Q,&kp M,        &kp W,        &kp Z,            &kp K,        &kp F,       &kp SQT,&hm RALT SEMI,&u_lt U_BUTTON DOT,\
       // ╰─────────┬───┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴───┬─────────╯
                      &u_lt U_FUN DEL,    &u_lt U_NUM BSPC,   &u_lt U_SYM RET,        &u_lt U_MOUSE TAB,  &u_lt U_NAV SPACE,  &u_lt U_MEDIA ESC \
       //           ╰───────────────────┴───────────────────┴───────────────────╯   ╰───────────────────┴───────────────────┴───────────────────╯
