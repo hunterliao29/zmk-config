@@ -1,3 +1,4 @@
-#include "common/default.h"
+#include "common/const.h"
 #include "func/corne.h"
+#include "common/default.h"
 #include "common/keymap.dtsi"

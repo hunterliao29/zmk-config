@@ -21,12 +21,12 @@ MAG  XXX  XXX  XXX  XXX       k30  k31  k32       k33  k34  k35       XXX  XXX  
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, \
               k30, k31, k32, k33, k34, k35            \
 ) \
-&bt BT_CLT  XXX             XXX             XXX             XXX                                                                                       XXX XXX XXX XXX &bt BT_CLT \
+&bt BT_CLR  XXX             XXX             XXX             XXX                                                                                       XXX XXX XXX XXX &bt BT_CLR \
 XXX         XXX             XXX             XXX             XXX             XXX                                                                   XXX XXX XXX XXX XXX XXX \
 XXX         &rgb_ug RGB_SPI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_TOG                                                       XXX XXX XXX XXX XXX XXX \
 &bootloader &rgb_ug RGB_SPD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_EFF                                                       XXX XXX XXX XXX XXX &bootloader \
 &sys_reset  XXX             XXX             XXX             XXX             XXX             &bt BT_SEL 2  &bt BT_SEL 3  XXX          XXX XXX XXX  XXX XXX XXX XXX XXX &sys_reset \
-XXX         XXX             XXX             XXX             XXX                             &bt BT_SEL 0  &bt BT_SEL 1  %out OUT_USB XXX XXX XXX      XXX XXX XXX XXX XXX
+XXX         XXX             XXX             XXX             XXX                             &bt BT_SEL 0  &bt BT_SEL 1  &out OUT_USB XXX XXX XXX      XXX XXX XXX XXX XXX
 
 #ifdef MOERGO
 #include <dt-bindings/zmk/rgb.h>
