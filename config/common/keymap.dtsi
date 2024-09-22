@@ -35,10 +35,6 @@
 
 / {
   behaviors {
-    shift_mod_morph(sqt_under, &kp SQT, &kp UNDERSCORE)
-    shift_mod_morph(minus_dqt, &kp MINUS, &kp DQT)
-    shift_mod_morph(slash_lt, &kp SLASH, &kp LT)
-
     shift_mod_morph(u_caps_words, &caps_word, &kp CAPS)
 
     shift_mod_morph(u_rgb_tog, &rgb_ug RGB_TOG, &rgb_ug RGB_OFF)
@@ -98,11 +94,11 @@
       display-name = "Base";
       bindings = <MAP_LAYER_BASE( \
       // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-           &kp B,        &kp L,        &kp D,        &kp W,        &kp Z,            &sqt_under,   &kp F,        &kp O,        &kp U,        &kp J,      \
+           &kp B,        &kp L,        &kp D,        &kp C,        &kp V,            &kp J,        &kp F,        &kp O,        &kp U,        &kp COMMA,  \
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
            &hm LCTRL N,  &hm LALT R,   &hm LGUI T,   &hm LSHIFT S, &kp G,            &kp Y,        &hm LSHIFT H, &hm LGUI A,   &hm LALT E,   &hm LCTRL I,\
       // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-           &u_lt U_BUTTON Q,&hm RALT X,&kp M,        &kp C,        &kp V,            &kp K,   &kp P,&kp DOT,&hm RALT &minus_dqt,&u_lt U_BUTTON &slash_lt,\
+           &u_lt U_BUTTON X,&hm RALT Q,&kp M,        &kp W,        &kp Z,            &kp K,        &kp P,       &kp SQT,&hm RALT SEMI,&u_lt U_BUTTON DOT,\
       // ╰─────────┬───┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴───┬─────────╯
                      &u_lt U_FUN DEL,    &u_lt U_NUM BSPC,   &u_lt U_SYM RET,        &u_lt U_MOUSE TAB,  &u_lt U_NAV SPACE,  &u_lt U_MEDIA ESC \
       //           ╰───────────────────┴───────────────────┴───────────────────╯   ╰───────────────────┴───────────────────┴───────────────────╯

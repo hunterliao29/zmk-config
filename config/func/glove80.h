@@ -7,8 +7,8 @@
     k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, \
               k30, k31, k32, k33, k34, k35            \
 ) \
-XXX  XXX  XXX  XXX  XXX                                               XXX  XXX  XXX  XXX  XXX \
-XXX  XXX  XXX  XXX  XXX  XXX                                     XXX  XXX  XXX  XXX  XXX  XXX \
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                               &kp F6  &kp F7  &kp F8  &kp F9  &kp F10 \
+&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                     &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  XXX \
 XXX  k00  k01  k02  k03  k04                                     k05  k06  k07  k08  k09  XXX \
 XXX  k10  k11  k12  k13  k14                                     k15  k16  k17  k18  k19  XXX \
 XXX  k20  k21  k22  k23  k24  XXX  XXX  XXX       XXX  XXX  XXX  k25  k26  k27  k28  k29  XXX \
